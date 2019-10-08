@@ -7,5 +7,13 @@ class App < Sinatra::Base
   end
 
   # Add your post route and action below
-
+  post '/food' do
+     "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
+   end
 end
+
+
+# get '/books/:id' do 
+#      id = params[:id]
+#       @book.find(1)
+#       erb :show
